@@ -235,7 +235,7 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.image.i1{
     background-image: url('../images/product_image/product03.PNG');
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.image.i2{
-    background-image: url('../images/product_image/product02.PNG');
+    background-image: url('../images/product_image/cnt03-03.PNG');
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.imgBgc{
     width: calc(100% / 7 * 5);
@@ -384,6 +384,9 @@ div.cntWrap>div.content.cnt03>div.section>div.artRight>div.article>div.images>di
     bottom: 0;
     right: -20px;
 }
+div.cntWrap>div.content.cnt03>div.section div.article:hover div.texts{
+    opacity: 1;
+}
 div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
     width: calc(100% / 6 * 3.8 - 20px);
     margin: 0px 10px;
@@ -391,6 +394,7 @@ div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
     margin-left: 25px;
     font-family: 'not';
     opacity: 0;
+    transition:  opacity 0.5s;
 }
 div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h3{
     font-size: 25px;
@@ -471,6 +475,7 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav>li{
     font-weight: 700;
     line-height: 40px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid{
     margin-top: 80px;
@@ -518,7 +523,12 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrRight{
     float: right;
     text-align: right;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns{}
+div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns{
+    cursor: pointer;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li:hover>span{
+    opacity: 1;
+}
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li{
     margin-top: 40px;
 }
@@ -527,6 +537,8 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>span{
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>i{
     font-size: 30px;
@@ -541,4 +553,5 @@ div.ftrWrap>div.footer>div.logo{
     text-align: center;
     text-transform: uppercase;
     margin-top: 40px;
+    cursor: pointer;
 }

@@ -405,6 +405,7 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav>li{
     font-weight: 700;
     line-height: 40px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid{
     margin-top: 80px;
@@ -452,7 +453,12 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrRight{
     float: right;
     text-align: right;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns{}
+div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns{
+    cursor: pointer;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li:hover>span{
+    opacity: 1;
+}
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li{
     margin-top: 40px;
 }
@@ -461,6 +467,8 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>span{
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>i{
     font-size: 30px;
@@ -475,4 +483,5 @@ div.ftrWrap>div.footer>div.logo{
     text-align: center;
     text-transform: uppercase;
     margin-top: 40px;
+    cursor: pointer;
 }

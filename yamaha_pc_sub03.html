@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="./css/yamaha_pc_sub03.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/yamaha_pc_sub03.js"></script>
+    <script>
+        $(function(){
+            $('.faqMenu>li').even().click(function(){
+                $('.faqMenu>li').removeClass('on');
+                $(this).addClass('on');
+            });
+        });
+    </script>
 </head>
 <body>
      <!-- hdr -->
@@ -43,25 +53,35 @@
                 <div class="artTop">
                     <div class="article">
                         <div class="image i1"></div>
-                        <div class="texts"></div>
+                        <div class="texts">
+                            <h3>커뮤니티</h3>
+                        </div>
                     </div>
                     <div class="article">
                         <div class="image i2"></div>
-                        <div class="texts"></div>
+                        <div class="texts">
+                            <h3>공지사항</h3>
+                        </div>
                     </div>
                     <div class="article">
                         <div class="image i3"></div>
-                        <div class="texts"></div>
+                        <div class="texts">
+                            <h3>문의</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="artBtm">
                     <div class="article">
                         <div class="image i1"></div>
-                        <div class="texts"></div>
+                        <div class="texts">
+                            <h3>서비스 센터</h3>
+                        </div>
                     </div>
                     <div class="article">
                         <div class="image i2"></div>
-                        <div class="texts"></div>
+                        <div class="texts">
+                            <h3>챗봇</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,17 +95,70 @@
                 <input type="text">
                 <i class="xi-search"></i>
             </div>
-            <div class="faqMenu">
-                <h4>Q 홈페이지에서 청강신청을 했는데 등록이 잘되었는지 궁금합니다.</h4>
-                <h4>Q ‘야마하 아티스트 서비스’에서 진행되는 행사는 지정 좌석인가요? 선착순 입장인가요?</h4>
-                <h4>Q 여러가지 버튼을 눌러 설정했습니다만, 제일 처음 상태에 되돌리는방법은 없나요? </h4>
-                <h4>Q USB 메모리를 사용할 수 있는 디지털 피아노 및 전자키보드 기종은 무엇인가요?</h4>
-                <h4>Q 그랜드 피아노는 업라이트 피아노에 비해 중량이 무거운대, 마루 보강을 해야합니까?</h4>
-                <h4>Q HDMI 케이블을 연결했는데 리시버에 5.1Ch의 신호가 들오지 않습니다 어떻게해야하나요?</h4>
-                <h4>Q XXX 상표의 제품이 YAMAHA보다 훨씬 더 강력한 출력을 제공합니다 그 이유가 무엇입니까? </h4>
-                <h4>Q 홈시어터 세트를 야마하로 업글 하였습니다. 서브우퍼를 기존 서브우퍼로 사용해도 되나요?</h4>
-                <h4>Q 영화를 감상할 때 대사가 너무 작게 들리지만 음향 효과는 너무 큽니다.</h4>
-            </div>
+            <ul class="faqMenu">
+                <li>
+                    <span>Q</span>
+                    <h3>홈페이지에서 청강신청을 했는데 등록이 잘되었는지 궁금합니다.</h3>
+                </li>
+                <li>
+                    <p>신청을 했는지 안했는지 잘 기억이 안나서 다시 확인해보고 싶으시면 로그인후, 해당 이벤트의 '청강 신청하기' 버튼을 눌러보세요. 새 창이 뜨면서 '이미 신청되었습니다' 라는 메시지가 나오면, 안전하게 신청이 되셨다고 생각하시면 됩니다.</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>‘야마하 아티스트 서비스’에서 진행되는 행사는 지정 좌석인가요? 선착순 입장인가요?</h3>
+                </li>
+                <li>
+                    <p>콘서트 살롱에는 120명까지 입장 가능하며, 행사당일 선착순입장을 원칙으로 하고 있습니다. 특별히 프로모션 행사이벤트가 아니면 좌석을 지정하지 않습니다. 행사 15분 전에 도착하시면 직원들의 안내에 따라 원하시는 좌석에 앉으실 수 있습니다.</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>여러가지 버튼을 눌러 설정했습니다만, 제일 처음 상태에 되돌리는방법은 없나요?</h3>
+                </li>
+                <li>
+                    <p>야마하뮤직코리아㈜는 이러한 소비자들의 욕구를 만족시켜드리기 위하여 삼성동 코엑스 1층에 야마하 아티스트 서비스 서울을 운영하고 있습니다. 대부분의 프로 커스텀 악기들이 전시되어 있으며, 원하실 경우 예약하시고 방문하시면 직접 불어보실 수 있습니다</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>USB 메모리를 사용할 수 있는 디지털 피아노 및 전자키보드 기종은 무엇인가요?</h3>
+                </li>
+                <li>
+                    <p>DGX-520, 620 및 PSR-S700, S900 모델입니다</p>
+                </li>
+                <li><span>Q</span>
+                    <h3>그랜드 피아노는 업라이트 피아노에 비해 중량이 무거운대, 마루 보강을 해야합니까?</h3>
+                </li>
+                <li>
+                    <p>업라이트 피아노는 200~250kg, 그랜드 피아노는 가장 인기있는 C3L 제품이 320kg 정도 됩니다. 걱정이 되실 때는 주택업자나 대리점에 상담해주세요. 또, 그랜드 피아노는 세 부분으로 무게를 분산하기 때문에, 한 부분에 걸리는 하중은 비교적 적습니다.</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>HDMI 케이블을 연결했는데 리시버에 5.1Ch의 신호가 들오지 않습니다 어떻게해야하나요?</h3>
+                </li>
+                <li>
+                    <p>PSR과 DGX의 가장 큰 차이점은 건반수입니다. DGX-220은 76건반, DGX-520,620은 88건반이며, PSR은 61건반입니다. 특별히 기능적으로 구분된 것은 아닙니다. 더 자세한 것은 02-6000-2556으로 전화주시면 안내해드리겠습니다.</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>XXX 상표의 제품이 YAMAHA보다 훨씬 더 강력한 출력을 제공합니다 그 이유가 무엇입니까?</h3>
+                </li>
+                <li>
+                    <p>P-80에는 엠프 및 스피커가 탑재되어있지 않기 때문에 엠프와 스피커가 별도로 필요합니다. P-80의 옵션으로 야마하스피커 MS101Ⅲ는 엠프가 내장되어 있어 간편하게 사용하실 수 있습니다. 구입은 저희 야마하 AV대리점에서 가능하십니다.</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>홈시어터 세트를 야마하로 업글 하였습니다. 서브우퍼를 기존 서브우퍼로 사용해도 되나요?</h3>
+                </li>
+                <li>
+                    <p>보통, 드럼 세트로 사용하는 것과 같습니다. Foot 페달과 드럼 의자는 별매입니다. 또, 헤드폰, 앰프 내장 스피커 등도 별매이므로, 대리점에서 상담해 주세요.</p>
+                </li>
+                <li>
+                    <span>Q</span>
+                    <h3>영화를 감상할 때 대사가 너무 작게 들리지만 음향 효과는 너무 큽니다.</h3>
+                </li>
+                <li>
+                    <p>부속 등이 없어져 제품 사용에 어려움이 있을 경우, 구입 대리점에 문의하셔도 되지만, 야마하 서비스센터(080-004-0022)에 문의하시면 바로 상담을 받고 처리받을 수 있습니다.</p>
+                </li>
+            </ul>
         </div>
     </div>
      <!-- ftr -->
