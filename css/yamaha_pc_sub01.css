@@ -20,7 +20,6 @@ div.hdrWrap::before{
     height: 80px;
     position: absolute;
 }
-div.hdrWrap{}
 div.hdrWrap>div.header{
     width: 80%;
     max-width: 1080px;
@@ -34,7 +33,6 @@ div.hdrWrap>div.header::after{
     display: block;
     clear: both;
 }
-div.hdrWrap>div.header>div.logos{}
 div.hdrWrap>div.header>div.logos>ul.nav{
     width: 50%;
     margin: 0 auto;
@@ -107,13 +105,11 @@ div.mainWrap>div.main>p{
 div.cntWrap{
     background-color: #e1e1d9;
 }
-div.cntWrap>div.content{}
 
 /* cnt01 */
 div.cntWrap:nth-child(3){
     position: relative;
 }
-div.cntWrap>div.content.cnt01{}
 div.cntWrap>div.content.cnt01::before{
     content: '';
     display: block;
@@ -146,7 +142,6 @@ div.cntWrap>div.content.cnt01>div.header>h2{
     text-transform: capitalize;
     box-shadow: 2px 2px 10px #000;
 }
-div.cntWrap>div.content.cnt01>div.section{}
 div.cntWrap>div.content.cnt01>div.section>div.article{
     width: 68%;
 }
@@ -193,7 +188,6 @@ div.cntWrap>div.content.cnt02{
     max-width: 1080px;
     margin: 0 auto;
 }
-div.cntWrap>div.content.cnt02>div.header{}
 div.cntWrap>div.content.cnt02>div.header>h2{
     font-size: 80px;
     font-weight: 700;
@@ -204,7 +198,6 @@ div.cntWrap>div.content.cnt02>div.header>h2{
 div.cntWrap>div.content.cnt02>div.section{
     margin-top: 120px;
 }
-div.cntWrap>div.content.cnt02>div.section>div.article{}
 div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2){
     margin-top: 200px;
 }
@@ -451,7 +444,6 @@ div.ftrWrap>div.footer{
     max-width: 1080px;
     margin: 0 auto;
 }
-div.ftrWrap>div.footer>div.footerTop{}
 div.ftrWrap>div.footer>div.footerTop::after{
     content: '';
     display: block;
@@ -461,8 +453,6 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft{
     width: calc(100% / 12 * 7);
     float: left;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop{}
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav::after{
     content: '';
     display: block;
@@ -480,7 +470,6 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav>li{
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid{
     margin-top: 80px;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info::after{
     content: '';
     display: block;
@@ -499,13 +488,11 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info>li:nth-child
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm{
     margin-top: 40px;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
     font-size: 12px;
     line-height: 40px;
     font-weight: 700;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav::after{
     content: '';
     display: block;

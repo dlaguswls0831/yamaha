@@ -20,7 +20,6 @@ div.hdrWrap::before{
     height: 80px;
     position: absolute;
 }
-div.hdrWrap{}
 div.hdrWrap>div.header{
     width: 80%;
     max-width: 1080px;
@@ -34,7 +33,6 @@ div.hdrWrap>div.header::after{
     display: block;
     clear: both;
 }
-div.hdrWrap>div.header>div.logos{}
 div.hdrWrap>div.header>div.logos>ul.nav{
     width: 50%;
     margin: 0 auto;
@@ -381,7 +379,6 @@ div.ftrWrap>div.footer{
     max-width: 1080px;
     margin: 0 auto;
 }
-div.ftrWrap>div.footer>div.footerTop{}
 div.ftrWrap>div.footer>div.footerTop::after{
     content: '';
     display: block;
@@ -391,8 +388,6 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft{
     width: calc(100% / 12 * 7);
     float: left;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop{}
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav::after{
     content: '';
     display: block;
@@ -410,7 +405,6 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav>li{
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid{
     margin-top: 80px;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info::after{
     content: '';
     display: block;
@@ -429,13 +423,11 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info>li:nth-child
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm{
     margin-top: 40px;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
     font-size: 12px;
     line-height: 40px;
     font-weight: 700;
 }
-div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav{}
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav::after{
     content: '';
     display: block;
