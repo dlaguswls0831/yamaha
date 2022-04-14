@@ -11,31 +11,31 @@ body{
     font-family: 'osw';
 }
 /* har */
-div.hdrWrap::before{
-    content: '';
-    display: block;
-    background-color: #000;
-    opacity: 0.7;
-    width: 100%;
-    height: 80px;
-    position: absolute;
+div.hdrWrap{
+    background: rgba( 0, 0, 0, 0.8);
+    position: relative;
 }
 div.hdrWrap>div.header{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
     color: #fff;
-    position: relative;
-    opacity: 1;
 }
 div.hdrWrap>div.header::after{
     content: '';
     display: block;
     clear: both;
 }
+div.hdrWrap>div.header>div.logos{
+    width: calc(100% / 12 * 11);
+    float: left;
+}
+div.hdrWrap>div.header>div.logos>i{
+    display: none;
+}
 div.hdrWrap>div.header>div.logos>ul.nav{
-    width: 50%;
-    margin: 0 auto;
+    width: 80%;
+    margin-left: auto;
 }
 div.hdrWrap>div.header>div.logos>ul.nav::after{
     content: '';
@@ -43,16 +43,13 @@ div.hdrWrap>div.header>div.logos>ul.nav::after{
     clear: both;
 }
 div.hdrWrap>div.header>div.logos>ul.nav>li{
+    width: calc(100% / 6 * 2);
     float: left;
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-left: 140px;
     cursor: pointer;
-}
-div.hdrWrap>div.header>div.logos>ul.nav>li:nth-child(1){
-    margin-left: 0;
 }
 div.hdrWrap>div.header>div.logos>div.logo{
     font-size: 50px;
@@ -64,8 +61,7 @@ div.hdrWrap>div.header>div.logos>div.logo{
 }
 div.hdrWrap>div.header>div.icon{
     width: calc(100% / 12);
-    position: absolute;
-    top: 0; right: 0;
+    float: right;
     font-size: 25px;
 }
 div.hdrWrap>div.header>div.icon>i{
@@ -79,10 +75,12 @@ div.mainWrap{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../images/product_image/product_main.jpg');
-    padding: 560px 0px 200px;
+    padding: 560px 0px 400px;
 }
 div.mainWrap>div.main{
-    margin-left: 100px;
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
     color: #fff;
 }
 div.mainWrap>div.main>h2{
