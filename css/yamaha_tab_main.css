@@ -29,26 +29,27 @@ div.hdrWrap>div.header>div.logos>i{
     display: block;
     width: calc(100% / 5 * 1);
     float: left;
-    font-size: 30px;
-    line-height: 80px;
-    margin-left: 90px;
+    font-size: min(3em,30px);
+    line-height: min(2rem,80px);
+    margin-left: min(2.25rem,90px);
     cursor: pointer;
 }
 div.hdrWrap>div.header>div.logos>div.logo{
     width: calc(100% / 5 * 2);
-    font-size: 35px;
+    font-size: min(3.5em,35px);
     float: right;
-    line-height: 80px;
+    line-height: min(2rem,80px);
 }
 div.hdrWrap>div.header>div.icon{
-    width: calc(100% / 8 * 2);
+    width: calc(100% / 8 * 1);
     position : inherit;
     float: right;
-    font-size: 30px;
+    font-size: min(3em,30px);
 }
 div.hdrWrap>div.header>div.icon>i{
     float: left;
-    line-height: 80px;
+    line-height: min(2rem,80px);
+    margin: 0px 5px;
 }
 div.hdrWrap>div.header>div.logos>ul.nav{
     width: 100%;
@@ -57,26 +58,24 @@ div.hdrWrap>div.header>div.logos>ul.nav{
     overflow: hidden;
 }
 div.hdrWrap>div.header>div.logos>ul.nav>li:nth-child(1){
-    margin-left: 90px;
+    margin-left: min(2.25rem,90px);
     margin-right: 15px;
 }
 div.hdrWrap>div.header>div.logos>ul.nav>li{
     width: calc(100% / 8 * 1);
     margin-left: 20px;
-    line-height: 80px;
-    font-size: 20px;
+    line-height: min(2rem,80px);
+    font-size: min(2em,20px);
 }
 
 /* main */
 div.mainWrap{
     margin-top: 0;
-    background-size: auto;
-    background-position: top;
 }
 div.mainWrap>div.main{
     width: 90%;
     max-width: 700px;
-    padding: 240px 0px;
+    padding: min(6rem,240px) 0;
 }
 div.mainWrap>div.main>div.btn{
     display: none;
@@ -88,8 +87,8 @@ div.cntWrap>div.content{
     max-width: 700px;
 }
 div.cntWrap>div.content>div.header>h2{
-    font-size: 35px;
-    line-height: 40px;
+    font-size: min(3.5em,35px);
+    line-height: min(1rem,40px);
 }
 
 /* cnt01 */
