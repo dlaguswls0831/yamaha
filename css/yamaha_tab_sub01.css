@@ -1,3 +1,11 @@
+/* 90%=778px*/
+html{
+    font-size: 5.1vw;
+}
+body{
+    font-size: 1.2vw;
+}
+
 div.hdrWrap::before{
     display: none;
 }
@@ -5,7 +13,7 @@ div.hdrWrap{
     background-color: #000;
     position: fixed;
     width: 100vw;
-    z-index: 2;
+    z-index: 10;
 }
 div.hdrWrap>div.header{
     width: 90%;
@@ -71,4 +79,195 @@ div.hdrWrap>div.header>div.logos>ul.nav>li{
 /* main */
 div.mainWrap{
     margin-top: 0;
+    padding: min(6.75rem,270px) 0 min(4.75rem,190px);
+}
+div.mainWrap>div.main{
+    width: 90%;
+    max-width: 700px;
+}
+div.mainWrap>div.main>h2{
+    font-size: min(5em,50px)
+}
+div.mainWrap>div.main>p{
+    display: none;
+}
+
+/* 공통 */
+div.cntWrap>div.content{
+    width: 90%;
+    max-width: 700px;
+}
+
+/* cnt01 */
+div.cntWrap>div.content.cnt01::before{
+   display: none;
+}
+div.cntWrap>div.content.cnt01>div.header{
+    width: 90%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: auto;
+    top: 60px;
+    clip-path: polygon(0 0, 100% 0, 95% 53%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 65%);
+}
+div.cntWrap>div.content.cnt01>div.header>h2{
+    font-size: min(4em,40px);
+    padding: 20px 0px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image{
+    width: 100%;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image>div.ovrGird{
+    width: calc((100vw - 700px) / 2 + 100%);
+    margin-left: min(calc((100vw - 700px) / -2),calc((100vw - 90vw) / -2));
+    height: min(9rem,360px);
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>div.textBgc{
+    display: none;
+}
+
+/* cnt02 */
+div.cntWrap>div.content.cnt02>div.header>h2{
+    font-size: min(4em,40px);
+}
+div.cntWrap>div.content.cnt02>div.section{
+    margin-top: min(1rem,40px);
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2){
+    margin-top: min(2rem,80px);
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.imgBgc{
+    display: none;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images{
+    width: calc(100% / 8 * 5 - 20px);
+    position: relative;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.image{
+    height: min(10rem,400px);
+    position: relative;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(1)>div.images>div.image::before{
+    content: 'sound';
+    display: block;
+    background-color: #3a3f59;
+    color: #fff;
+    width: 40%;
+    height: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 52%, 100% 100%, 100% 100%, 0 100%, 0 100%, 11% 51%);
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: -50px;
+    top: 40px;
+    text-align: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2)>div.images>div.image::before{
+    content: 'value';
+    display: block;
+    background-color: #3a3f59;
+    color: #fff;
+    width: 40%;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    padding-left: 20px;
+    clip-path: polygon(0 0, 100% 0, 89% 53%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 54%);
+    position: absolute;
+    right: -50px;
+    top: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+    width: calc(100% / 8 * 3 - 20px);
+    margin-top: min(3rem,120px);
+}
+
+/* cnt03 */
+div.cntWrap:nth-child(5){
+    padding-top: min(3rem,120px);
+}
+
+div.cntWrap>div.content.cnt03{
+    width: 90%;
+    max-width: 700px;
+}
+div.cntWrap>div.content.cnt03>div.header>h2{
+    font-size: min(4em,40px);
+}
+div.cntWrap>div.content.cnt03>div.section>div.artLeft{
+    margin-top: 0;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
+    margin-left: 10px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.images>div.imgbgc{
+    display: none;
+}
+div.cntWrap>div.content.cnt03>div.section div.article{
+    margin-top: min(1rem,40px);
+}
+div.cntWrap>div.content.cnt03>div.section>div.artLeft{
+    margin-top: 0;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.images>div.image{
+    height: min(2.5rem,100px);
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts{
+    margin-top: 20px;
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>h3{
+    font-size: min(1.4em,14px);
+    line-height: min(0.5rem,20px);
+}
+div.cntWrap>div.content.cnt03>div.section div.article>div.texts>p{
+    height: min(1rem,40px);
+    overflow: hidden;
+}
+
+/* cnt04 */
+div.cntWrap:nth-child(6){
+    padding: min(1rem,40px) 0 min(3rem,120px);
+}
+div.cntWrap>div.content.cnt04>div.header{
+    position: initial;
+}
+div.cntWrap>div.content.cnt04>div.header>h2{
+    font-size: min(4em,40px);
+}
+
+/* ftr */
+div.ftrWrap{
+    padding: min(1rem,40px) 0;
+}
+div.ftrWrap>div.footer{
+    width: 90%;
+    max-width: 700px;
+}
+div.ftrWrap>div.footer>div.logo{
+    margin-top: 0;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop{
+    display: none;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid{
+    margin-top: 0;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm {
+    margin-top: 20px;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrRight{
+    display: none;
+}
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav>li{
+    margin-right: 10px;
 }
