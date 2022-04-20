@@ -14,6 +14,7 @@ body{
     font-size: 0.7vw;
     position: relative;
     font-family: 'osw';
+    overflow-x: hidden;
 }
 
 /* har */
@@ -76,8 +77,8 @@ div.hdrWrap>div.header>div.icon>i{
 
 /* main */
 div.mainWrap{
-    margin-top: -80px;
-    padding: min(12.5rem,500px) 0 min(6rem,240px);
+    margin-top: min(-2rem,-80px);
+    padding: min(12.5rem,500px) 0 min(7rem,280px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,10 +108,9 @@ div.cntWrap>div.content{
     margin: 0 auto;
 }
 div.cntWrap>div.content>div.header{
-    width: calc(100% / 12 * 7);
+    width: calc(100% / 12 * 6);
     background-color: #301b3f;
     padding: min(1rem,40px) 0;
-    box-shadow: 2px 2px 8px #000;
 }
 div.cntWrap>div.content>div.header>h2{
     font-size: min(8em,80px);
@@ -118,38 +118,45 @@ div.cntWrap>div.content>div.header>h2{
     line-height: min(3rem,120px);
     color: #fff;
     text-transform: uppercase;
-    text-align: center;
 }
 
 /* cnt01 */
 div.cntWrap>div.content.cnt01{
-    margin-top: min(-1rem,-80px);
     position: relative;
+    padding-top: min(3rem,120px);
 }
 div.cntWrap:nth-child(3)::before{
     content: '';
     display: block;
-    height: 240px;
+    height: min(6rem,240px);
     width: calc(100% / 12 * 5);
     background-color: #b4a5a5;
     position: absolute;
-    top: 960px;
+    top: min(22rem,880px);
 }
 div.cntWrap>div.content.cnt01>div.header{
     margin-left: 70px;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 13% 50%, 0% 0%);
+    top: min(-1rem,-80px);
+    left: 0;
+}
+div.cntWrap>div.content.cnt01>div.header>h2{
+    text-align: right;
+    margin-right: min(1.25rem,50px);
 }
 div.cntWrap>div.content.cnt01>div.section{
     width: 80%;
     background-color: #3c415c;
     margin-left: auto;
-    margin-top: -140px;
+    margin-top: min(-2.5rem,-140px);
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid{
     width: calc((100vw - 1080px) / 2 + 100%);
+    min-width : calc((100vw - 80vw) / 2 + 100%);
     background-color: #3c415c;
-    padding: 200px 0px 200px 90px;
+    padding: min(3rem,120px) 0 min(2.5rem,100px) min(1rem,40px);
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div::after{
     content: '';
@@ -157,11 +164,12 @@ div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div::after{
     clear: both;
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artTop{
-    width: 70%;
+    width: 100%;
+    padding-top: min(1rem,40px);
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div div.image{
-    width: calc(100% / 5 * 2);
-    height: 200px;
+    width: 60%;
+    height: min(5rem,200px);
     margin: 0 auto;
     background-size: 3cm;
     background-position: center;
@@ -180,25 +188,25 @@ div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div div.image.i4{
     background-image: url('../images/product_image/cnt01_04.png');
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div div.texts{
-    font-size: 40px;
+    font-size: min(4em,40px);
     font-weight: 700;
-    line-height: 40px;
+    line-height: min(1rem,40px);
     text-align: center;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: min(1rem,40px);
     color: #b4a5a5;
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artTop>div.article{
-    width: calc(100% / 10 * 5 - 20px);
+    width: calc(100% / 10 * 4 - 20px);
     margin: 0px 10px;
     float: left;
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artBtm{
-    margin-top: 120px;
-    width: 70%;
+    margin-top: min(2rem,80px);
+    width: 100%;
 }
 div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artBtm>div.article{
-    width: calc(100% / 10 * 5 - 20px);
+    width: calc(100% / 10 * 4 - 20px);
     margin: 0px 10px;
     float: left;
 }
@@ -207,33 +215,41 @@ div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artBtm>div.article{
 div.cntWrap:nth-child(4)::before{
     content: '';
     display: block;
-    height: 240px;
+    height: min(6rem,240px);
     width: calc(100% / 12 * 5);
     background-color: #b4a5a5;
     position: absolute;
     z-index: 1;
-    top: 2090px;
+    top: min(48.75rem,1950px);
     right: 0;
 }
-div.cntWrap>div.content.cnt02>div.header{
-    margin-left: 360px;
+div.cntWrap>div.content.cnt02{
     position: relative;
+}
+div.cntWrap>div.content.cnt02>div.header{
+    position: absolute;
     z-index: 2;
-    margin-top: -160px;
+    margin-top: min(-3rem,-160px);
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    right: 0;
+    top: min(6.375rem,255px);
+}
+div.cntWrap>div.content.cnt02>div.header>h2{
+    margin-left: min(1.25rem,50px);
 }
 div.cntWrap>div.content.cnt02>div.section{
-    width: 80%;
+    width: 90%;
     background-color: #3c415c;
-    margin-top: -160px;
+    margin-top: min(-3rem,-160px);
 }
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid{
-    width: calc((100vw - 1080px) / 2 + 100%);
-    margin-left: calc((100vw - 1080px) / -2);
+    margin-left: min(calc((100vw - 1080px) / -2),calc((100vw - 80vw) / -2));
+    min-width : calc((100vw - 80vw) / 2 + 100%);
     background-color: #3c415c;
-    padding: 280px 0px 200px;
+    padding: min(7rem,280px) 0 min(5rem,200px);
 }
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div{
-    width: 70%;
+    width: 100%;
     margin-left: auto;
 }
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div::after{
@@ -242,21 +258,23 @@ div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div::after{
     clear: both;
 }
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div div.article{
-    width: 50%;
-    float: left;
+    width: calc(100% / 10 * 4 - 20px);
+    margin: 0px 10px;
+    margin-left: auto;
+    float: right;
 }
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div div.article>div.texts{
-    font-size: 40px;
+    font-size: min(4em,40px);
     font-weight: 700;
-    line-height: 40px;
+    line-height: min(1rem,40px);
     text-align: center;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: min(1rem,40px);
     color: #b4a5a5;
 }
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div div.article>div.image{
     width: 60%;
-    height: 200px;
+    height: min(5rem,200px);
     margin: 0 auto;
     background-size: 3cm;
     background-position: center;
@@ -274,49 +292,57 @@ div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div div.article>div.image.
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div div.article>div.image.i4{
     background-image: url('../images/product_image/cnt02_04.png');
 }
+div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div.artTop{
+    padding-top: min(1rem,40px);
+}
 div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div.artBtm{
-    margin-top: 120px;
+    margin-top: min(2rem,80px);
 }
 
 /* cnt03 */
 div.cntWrap:nth-child(5):before{
     content: '';
     display: block;
-    height: 240px;
+    height: min(6rem,240px);
     width: calc(100% / 12 * 5);
-    background-color: #151515;
+    background-color: #242424;
     position: absolute;
-    bottom: 1300px;
+    bottom: min(32.5rem,1300px);
     z-index: 1;
 }
 div.cntWrap>div.content.cnt03{
     position: relative;
 }
 div.cntWrap>div.content.cnt03>div.header{
-    margin-left: 70px;
+    margin-left: min(1.75rem,70px);
     position: relative;
     z-index: 1;
-    top: -120px;
+    top: min(-2rem,-120px);
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+div.cntWrap>div.content.cnt03>div.header>h2{
+    margin-left: min(1.25rem,50px);
 }
 div.cntWrap>div.content.cnt03>div.section{
     width: 80%;
     background-color: #3c415c;
     margin-left: auto;
-    margin-top: -320px;
+    margin-top: min(-7rem,-320px);
     position: relative;
 }
 div.cntWrap>div.content.cnt03>div.section>div.ovrGrid{
     width: calc((100vw - 1080px) / 2 + 100%);
+    min-width : calc((100vw - 80vw) / 2 + 100%);
     background-color: #3c415c;
-    height: 900px;
+    height: min(22.5rem,900px);
 }
 div.cntWrap>div.content.cnt03>div.section>div.artView{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
     position: absolute;
-    top: 300px;
-    left: 90px;
+    top: min(7.5rem,300px);
+    left: min(2.25rem,90px);
     overflow: hidden;
 }
 div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup{
@@ -333,7 +359,7 @@ div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup>div.article{
     margin: 0px 10px;
 }
 div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup>div.article>div.image{
-    height: 500px;
+    height: min(12.5rem,500px);
     background-color: #ccc;
     background-size: cover;
     background-position: center;
@@ -359,11 +385,11 @@ div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup>div.article>d
 }
 div.cntWrap>div.content.cnt03>div.btns{
     position: absolute;
-    top: 400px;
+    top: min(10rem,400px);
     right: 0;
 }
 div.cntWrap>div.content.cnt03>div.btns>div.btn>i{
-    font-size: 50px;
+    font-size: min(5em,50px);
     font-weight: 700;
     color: #fff;
     cursor: pointer;

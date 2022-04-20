@@ -1,0 +1,100 @@
+/* 90%=778px*/
+html{
+    font-size: 5.1vw;
+}
+body{
+    position: relative;
+    font-size: 1.2vw;
+}
+
+div.hdrWrap::before{
+    display: none;
+}
+div.hdrWrap{
+    background-color: #000;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+div.hdrWrap>div.header{
+    width: 90%;
+    max-width: 700px;
+}
+div.hdrWrap>div.header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+div.hdrWrap>div.header>div.logos{
+    float: left;
+    width: calc(100% / 8 * 5);
+}
+div.hdrWrap>div.header>div.logos::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+div.hdrWrap>div.header>div.logos>i{
+    display: block;
+    width: calc(100% / 5 * 1);
+    float: left;
+    font-size: min(3em,30px);
+    line-height: min(2rem,80px);
+    margin-left: min(2.25rem,90px);
+    cursor: pointer;
+}
+div.hdrWrap>div.header>div.logos>div.logo{
+    width: calc(100% / 5 * 2);
+    font-size: min(3.5em,35px);
+    float: right;
+    line-height: min(2rem,80px);
+}
+div.hdrWrap>div.header>div.icon{
+    width: calc(100% / 8 * 1);
+    position : inherit;
+    float: right;
+    font-size: min(3em,30px);
+}
+div.hdrWrap>div.header>div.icon>i{
+    float: left;
+    line-height: min(2rem,80px);
+    margin: 0px 5px;
+}
+div.hdrWrap>div.header>div.logos>ul.nav{
+    width: 100%;
+    float: left;
+    height: 0;
+    overflow: hidden;
+}
+div.hdrWrap>div.header>div.logos>ul.nav>li:nth-child(1){
+    margin-left: min(2.25rem,90px);
+    margin-right: 15px;
+}
+div.hdrWrap>div.header>div.logos>ul.nav>li{
+    width: calc(100% / 8 * 1);
+    margin-left: 20px;
+    line-height: min(2rem,80px);
+    font-size: min(2em,20px);
+}
+
+div.mainWrap{
+    margin-top: 0;
+    padding: min(7rem,280px) 0 min(3rem,120px);
+}
+div.mainWrap>div.main{
+    width: 90%;
+    max-width: 700px;
+}
+div.mainWrap>div.main>h2{
+    font-size: min(4em,40px);
+    line-height: min(1rem,40px);
+}
+
+div.cntWrap{
+    padding-top: 0;
+}
+div.cntWrap:nth-child(3)::before{
+    display: none;
+}
+div.cntWrap>div.content.cnt01>div.section>div.ovrGrid{
+}
