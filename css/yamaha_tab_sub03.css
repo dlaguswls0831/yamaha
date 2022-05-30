@@ -15,7 +15,7 @@ div.hdrWrap{
     background-color: #000;
     position: fixed;
     width: 100vw;
-    z-index: 10;
+    z-index: 999;
 }
 div.hdrWrap>div.header{
     width: 90%;
@@ -84,136 +84,87 @@ div.hdrWrap>div.header>div.logos>ul.nav>li{
 
 div.mainWrap{
     margin-top: 0;
-    padding: min(7rem,280px) 0 min(3rem,120px);
+    padding: min(6rem,240px) 0 min(3rem,120px);
 }
 div.mainWrap>div.main{
     width: 90%;
     max-width: 700px;
 }
 div.mainWrap>div.main>h2{
+    margin-left: 0;
     font-size: min(4em,40px);
-    line-height: min(1rem,40px);
+    line-height: min(1.5rem,60px);
 }
 
 
 div.cntWrap{
-    padding-top: 0;
-    background-color: #3c415c;
+    padding: min(3rem,120px) 0  min(3rem,120px);
 }
 div.cntWrap>div.content{
     width: 90%;
     max-width: 700px;
 }
-
-
-div.cntWrap:nth-child(3){
-    background-color: #3c415c;
-    padding: min(2rem,80px) 0 min(2rem,80px);
-}
-div.cntWrap:nth-child(3)::before{
-    display: none;
-}
-div.cntWrap>div.content.cnt01{
-    padding-top: 0;
-    position: initial;
-}
-div.cntWrap>div.content.cnt01>div.header{
-    position: initial;
-    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0);
-    background-color: #e1e0d8;
-    margin-left: 0;
-}
-div.cntWrap>div.content.cnt01>div.header>h2{
+div.cntWrap>div.content>div.header>h2{
     font-size: min(4em,40px);
-    line-height: min(1rem,40px);
-    margin-right: 0;
+}
+div.cntWrap>div.content>div.section>div.artTop>div.article>div.image{
+    height: min(4.5rem,180px);
+}
+div.cntWrap>div.content>div.section>div.artTop>div.article>div.texts{
+    margin-top: min(-4.5rem,-180px);
+    height: min(6rem,240px);
+}
+div.cntWrap>div.content>div.section>div.artTop>div.article>div.texts>h3{
+    font-size: min(2.4em,24px);
+}
+div.cntWrap>div.content>div.section>div.artBtm>div.article>div.image{
+    height: min(4.5rem,180px);
+}
+div.cntWrap>div.content>div.section>div.artBtm>div.article>div.image{
+    height: min(4.5rem,180px);
+}
+div.cntWrap>div.content>div.section>div.artBtm>div.article>div.texts{
+    margin-top: min(-4.5rem,-180px);
+    height: min(6rem,240px);
+}
+div.cntWrap>div.content>div.section>div.artBtm>div.article>div.texts>h3{
+    font-size: min(2.4em,24px);
+}
+
+div.bnrWrap{
+    padding: 0 0 min(2rem,80px);
+}
+div.bnrWrap>div.banner{
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+}
+div.bnrWrap>div.banner>h2{
+    position: inherit;
+    width: 100%;
+    font-size: min(5em,50px);
     text-align: center;
-    color: #3c415c;
 }
-div.cntWrap>div.content.cnt01>div.section{
-    margin-top: 0;
-    width: 100%;
+div.bnrWrap>div.banner>div.searchBar{
+    border: 0;
+    width: calc(100% / 8 * 1);
+    position: absolute;
+    right: 0; top: min(1.25rem,50px);
 }
-div.cntWrap>div.content.cnt01>div.section>div.ovrGrid{
-    width: 100%;
-    min-width: 0;
-    padding: 0;
-}
-div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artTop>div.article{
-    width: calc(100% / 2 - 20px);
-}
-div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div.artBtm>div.article{
-    width: calc(100% / 2 - 20px);
-}
-
-
-
-div.cntWrap:nth-child(4){
-    background-color: #3c415c;
-}
-div.cntWrap:nth-child(4)::before{
-    display: none;
-}
-div.cntWrap>div.content.cnt02>div.header{
-    position: initial;
-    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0);
-    background-color: #e1e0d8;
-    margin-top: 0;
-    margin-left: auto;
-}
-div.cntWrap>div.content.cnt02>div.header>h2{
+div.bnrWrap>div.banner>div.searchBar>i{
     font-size: min(4em,40px);
-    line-height: min(1rem,40px);
-    margin-right: 0;
-    text-align: center;
-    color: #3c415c;
-    margin-left: 0;
 }
-div.cntWrap>div.content.cnt02>div.section{
-    margin-top: 0;
-    width: 100%;
-}
-div.cntWrap>div.content.cnt02>div.section>div.ovrGrid{
-    width: 100%;
-    padding: 0;
-}
-
-div.cntWrap{
-    padding: min(1rem,40px) 0 min(2rem,80px);
-}
-div.cntWrap:nth-child(5):before{
+div.bnrWrap>div.banner>div.searchBar>input{
     display: none;
 }
-div.cntWrap>div.content.cnt03>div.header{
-    position: initial;
-    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0);
-    background-color: #e1e0d8;
+div.bnrWrap>div.banner>ul.faqMenu{
     margin-top: 0;
 }
-div.cntWrap>div.content.cnt03>div.header>h2{
-    font-size: min(4em,40px);
-    line-height: min(1rem,40px);
-    margin-right: 0;
-    text-align: center;
-    color: #3c415c;
-    margin-left: 0;
-}
-div.cntWrap>div.content.cnt03>div.section{
-    position: initial;
-    margin-top: 0;
-}
-div.cntWrap>div.content.cnt03>div.section>div.ovrGrid{
+div.bnrWrap>div.banner>ul.faqMenu>li:nth-child(8)~li{
     display: none;
 }
-div.cntWrap>div.content.cnt03>div.section>div.artView{
-    position: initial;
-    margin-top: min(1rem,40px);
-}
-div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup>div.article>div.image{
-    height: min(8rem,320px);
-}
-div.cntWrap>div.content.cnt03>div.btns{
-    top: min(7.5rem,300px);
+div.bnrWrap>div.banner>ul.faqMenu>li>h3{
+    font-size: min(1.8em,18px);
 }
 
 /* ftr */

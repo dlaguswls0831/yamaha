@@ -180,13 +180,13 @@ div.article:nth-child(2) .imgbgs{
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.images>div.image{
     height: min(19rem,760px);
-    background-color: #ccc;
     position: relative;
     z-index: 1;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 150px;
+    background-color: #e1e0d8;
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.images>div.image.i1{
     margin-top: min(1.5rem,60px);

@@ -10,49 +10,11 @@
     <link rel="stylesheet" href="./css/xeicon.min.css">
     <link rel="stylesheet" href="./css/yamaha_pc_main.css">
     <link rel="stylesheet" href="./css/yamaha_tab_main.css" media="(max-width:1024px) and (min-width:0px)">
+    <link rel="stylesheet" href="./css/yamaha_mob_main.css" media="(max-width:420px) and (min-width:0px)">
     <script src="./js/jquery-1.11.1.min.js"></script>
-    <script src="./js/jquery.mobile.custom.min.js"></script>
-    <script>
-        $(function(){
-            var i=0;
-            var wd = $(window).width();
-            if(wd > 1024){
-                $('.cnt02 .btns span').eq(1).click(function(){
-                    i++;
-                    if(i>=6){
-                        i=6;
-                    }
-                    $('.artView>.artGroup').css('margin-left',i*-33.3+'%');
-                });
-                $('.cnt02 .btns span').eq(0).click(function(){
-                    i--;
-                    if(i<=0){
-                        i=0;
-                    }
-                    $('.artView>.artGroup').css('margin-left',i*-33.3+'%');
-                });
-            }else if(wd > 420 && wd <= 1024){
-                $('.hdrWrap .logos>i').click(function(){
-                    $('.hdrWrap .logos>.nav').toggleClass('navon');
-                });
-    
-                $('.artView>.artGroup').swipeleft(function(){
-                    i++;
-                    if(i>=2){
-                        i=2;
-                    }
-                    $('.artView>.artGroup').css('margin-left',i*-100+'%');
-                });
-                $('.artView>.artGroup').swiperight(function(){
-                    i--;
-                    if(i<=0){
-                        i=0;
-                    }
-                    $('.artView>.artGroup').css('margin-left',i*-100+'%');
-                });
-            }else{}
-        });
-    </script>
+    <script src="./js/jquery.mobile.custom.min.js"></script>   
+    <script src="./js/commom.js"></script>
+    <script src="./js/yamaha_main.js"></script>
 </head>
 <body>
     <!-- hdr -->

@@ -85,9 +85,12 @@ div.mainWrap{
     margin-top: 0;
 }
 div.mainWrap>div.main{
-    width: 90%;
+    width: 65%;
     max-width: 700px;
     padding: min(3rem,120px) 0 min(3rem,120px);
+}
+div.mainWrap>div.main>h2{
+    width: calc(100% / 8 * 5);
 }
 div.mainWrap>div.main>div.btn{
     display: none;
