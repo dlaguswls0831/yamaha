@@ -64,6 +64,10 @@ div.hdrWrap>div.header>div.logos>ul.nav{
     float: left;
     height: 0;
     overflow: hidden;
+    transition: height 0.5s;
+}
+div.hdrWrap>div.header>div.logos>ul.nav.navon{
+    height: min(2rem,80px);
 }
 div.hdrWrap>div.header>div.logos>ul.nav>li:nth-child(1){
     margin-left: min(2.25rem,90px);
@@ -83,7 +87,7 @@ div.mainWrap{
 div.mainWrap>div.main{
     width: 90%;
     max-width: 700px;
-    padding: min(6rem,240px) 0 min(3rem,120px);
+    padding: min(3rem,120px) 0 min(3rem,120px);
 }
 div.mainWrap>div.main>div.btn{
     display: none;
@@ -190,7 +194,9 @@ div.cntWrap>div.content.cnt02>div.header>h2{
 div.cntWrap>div.content.cnt02>div.section{
     padding: 0;
 }
-div.cntWrap>div.content.cnt02>div.section>div.artView{}
+div.cntWrap>div.content.cnt02>div.section>div.artView{
+    height: min(8.25rem,330px);
+}
 div.cntWrap>div.content.cnt02>div.section>div.artView>div.artGroup>div.article>div.image{
     height: min(8rem,320px);
 }
@@ -244,7 +250,7 @@ div.cntWrap>div.content.cnt03>div.header{
 }
 div.cntWrap>div.content.cnt03>div.header>h2{
     width: calc(100% / 8 * 2);
-    line-height: 80px;
+    line-height: min(2rem,80px);
     padding: 0;
     text-align: inherit;
     margin-left: min(2.25rem,90px);
@@ -314,7 +320,7 @@ div.bnrWrap>div.banner>div.texts>div.bar.bar01>div.ovrgird {
 
 /* ftr */
 div.ftrWrap{
-    padding: 40px 0px;
+    padding: min(1rem,40px) 0;
 }
 div.ftrWrap>div.footer{
     width: 90%;

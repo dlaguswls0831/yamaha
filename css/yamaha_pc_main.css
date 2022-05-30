@@ -19,6 +19,7 @@ body{
 div.hdrWrap{
     background: rgba( 0, 0, 0, 0.8);
     position: relative;
+    z-index: 999;
 }
 div.hdrWrap>div.header{
     width: 80%;
@@ -75,18 +76,18 @@ div.hdrWrap>div.header>div.icon>i{
 
 /* main */
 div.mainWrap{
+    position: relative;
+}
+div.mainWrap>video{
+    width: 100%;
     margin-top: min(-2rem,-80px);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../images/main_image/main_img.jpg');
 }
 div.mainWrap>div.main{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
-    padding: min(12rem,480px) min(0rem,0px) min(9.25rem,370px);
-    position: relative;
+    position: absolute;
+    top: 35%; left: 20%;
 }
 div.mainWrap>div.main>h2{
     width: calc(100% / 12 * 5.5);
@@ -128,6 +129,7 @@ div.cntWrap>div.content>div.header>h2{
 /* cnt01 */
 div.cntWrap:nth-child(3){
     margin: 0;
+    margin-top: -5px;
     background-color: #e1e0d8;
     padding: min(3rem,120px) 0 min(7.5rem,300px);
 }
@@ -141,7 +143,6 @@ div.cntWrap>div.content.cnt01>div.section>div.article{
     margin: 0px 10px;
     float: left;
 }
-div.cntWrap>div.content.cnt01>div.section>div.article:nth-child(2){}
 div.cntWrap>div.content.cnt01>div.section>div.article>div.images{
     position: relative;
 }
@@ -238,7 +239,6 @@ div.cntWrap>div.content.cnt02{
     margin: 0 auto;
     padding: min(3rem,120px) 0 min(5rem,200px);
     position: relative;
-    overflow: hidden;
 }
 div.cntWrap>div.content.cnt02>div.header{
     width: calc(100% / 12 * 5);
@@ -254,10 +254,16 @@ div.cntWrap>div.content.cnt02>div.header>h2{
     padding: min(0.5rem,20px) 0;
 }
 div.cntWrap>div.content.cnt02>div.section{
-    position: relative;}
-div.cntWrap>div.content.cnt02>div.section>div.artView{}
+    position: relative;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artView{
+    width: 100%;
+    height: min(11.25rem,450px);
+    overflow: hidden;
+}
 div.cntWrap>div.content.cnt02>div.section>div.artView>div.artGroup{
     width: 300%;
+    transition: margin-left 0.5s;
 }
 div.cntWrap>div.content.cnt02>div.section>div.artView>div.artGroup::after{
     content: '';
@@ -377,7 +383,6 @@ div.cntWrap>div.content.cnt03>div.header>h2{
     color: #fff;
     padding: min(0.5rem,20px) 0;
 }
-div.cntWrap>div.content.cnt03>div.section{}
 div.cntWrap>div.content.cnt03>div.section::after{
     content: '';
     display: block;

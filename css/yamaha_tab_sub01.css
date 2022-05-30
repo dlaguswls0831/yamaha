@@ -107,7 +107,7 @@ div.cntWrap>div.content.cnt01>div.header{
     margin-top: 0;
     padding-top: 0;
     margin-left: auto;
-    top: 60px;
+    top: min(1.5rem,60px);
     clip-path: polygon(0 0, 100% 0, 95% 53%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 65%);
 }
 div.cntWrap>div.content.cnt01>div.header>h2{
@@ -153,13 +153,13 @@ div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(1)>div.images>di
     background-color: #3a3f59;
     color: #fff;
     width: 40%;
-    height: 60px;
+    height: min(1.5rem,60px);
     clip-path: polygon(0 0, 100% 0, 100% 52%, 100% 100%, 100% 100%, 0 100%, 0 100%, 11% 51%);
-    font-size: 25px;
-    line-height: 60px;
+    font-size: min(2.5em,25px);
+    line-height: min(1.5rem,60px);
     position: absolute;
-    left: -50px;
-    top: 40px;
+    left: min(-1.25rem,-50px);
+    top: min(1rem,40px);
     text-align: right;
     padding-right: 20px;
     text-transform: uppercase;
@@ -171,14 +171,14 @@ div.cntWrap>div.content.cnt02>div.section>div.article:nth-child(2)>div.images>di
     background-color: #3a3f59;
     color: #fff;
     width: 40%;
-    height: 60px;
-    font-size: 25px;
-    line-height: 60px;
+    height: min(1.5rem,60px);
+    font-size: min(2.5em,25px);
+    line-height: min(1.5rem,60px);
     padding-left: 20px;
     clip-path: polygon(0 0, 100% 0, 89% 53%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 54%);
     position: absolute;
-    right: -50px;
-    top: 40px;
+    right: min(-1.25rem,-50px);
+    top: min(1rem,40px);
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -190,6 +190,7 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
 /* cnt03 */
 div.cntWrap:nth-child(5){
     padding-top: min(3rem,120px);
+    padding-bottom: min(3rem,120px);
 }
 
 div.cntWrap>div.content.cnt03{

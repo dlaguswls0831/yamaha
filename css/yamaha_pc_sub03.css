@@ -6,41 +6,40 @@
     font-family: 'not';
     src: url('./fonts/NotoSerifKR-Light.otf') format('truetype');
 }
-body{
-    position: relative;
-    font-family: 'osw';
+html{
+    font-size: 3vw;
 }
 body{
     position: relative;
     font-family: 'osw';
+    font-size: 0.7vw;
 }
 /* har */
-div.hdrWrap::before{
-    content: '';
-    display: block;
-    background-color: #000;
-    opacity: 0.7;
-    width: 100%;
-    height: 80px;
-    position: absolute;
+div.hdrWrap{
+    background: rgba( 0, 0, 0, 0.8);
+    position: relative;
 }
 div.hdrWrap>div.header{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
     color: #fff;
-    position: relative;
-    opacity: 1;
 }
 div.hdrWrap>div.header::after{
     content: '';
     display: block;
     clear: both;
 }
-
+div.hdrWrap>div.header>div.logos{
+    width: calc(100% / 12 * 11);
+    float: left;
+}
+div.hdrWrap>div.header>div.logos>i{
+    display: none;
+}
 div.hdrWrap>div.header>div.logos>ul.nav{
-    width: 50%;
-    margin: 0 auto;
+    width: 80%;
+    margin-left: auto;
 }
 div.hdrWrap>div.header>div.logos>ul.nav::after{
     content: '';
@@ -48,20 +47,17 @@ div.hdrWrap>div.header>div.logos>ul.nav::after{
     clear: both;
 }
 div.hdrWrap>div.header>div.logos>ul.nav>li{
+    width: calc(100% / 6 * 2);
     float: left;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: min(3em,30px);
+    line-height: min(1rem,40px);
     font-weight: 700;
     text-transform: capitalize;
-    margin-left: 140px;
     cursor: pointer;
 }
-div.hdrWrap>div.header>div.logos>ul.nav>li:nth-child(1){
-    margin-left: 0;
-}
 div.hdrWrap>div.header>div.logos>div.logo{
-    font-size: 50px;
-    line-height: 40px;
+    font-size: min(5em,50px);
+    line-height: min(1rem,40px);
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -69,9 +65,8 @@ div.hdrWrap>div.header>div.logos>div.logo{
 }
 div.hdrWrap>div.header>div.icon{
     width: calc(100% / 12);
-    position: absolute;
-    top: 0; right: 0;
-    font-size: 25px;
+    float: right;
+    font-size: min(2.5em,25px);
 }
 div.hdrWrap>div.header>div.icon>i{
     cursor: pointer;
@@ -79,8 +74,8 @@ div.hdrWrap>div.header>div.icon>i{
 
 /* main */
 div.mainWrap{
-    margin-top: -80px;
-    padding: 560px 0px 240px;
+    margin-top: min(-2rem,-80px);
+    padding: min(14rem,560px) 0 min(6rem,240px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,21 +88,21 @@ div.mainWrap>div.main{
 }
 div.mainWrap>div.main>h2{
     width: 60%;
-    font-size: 80px;
-    line-height: 80px;
+    font-size: min(8em,80px);
+    line-height: min(2rem,80px);
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0px 5px 4px #000;
     margin-left: auto;
     text-align: center;
-    margin-left: 610px;
+    margin-left: min(15.25rem,610px);
 }
 
 /* cnt*/
 div.cntWrap{
     background-color: #e1e0d8;
-    padding: 120px 0px 240px;
+    padding: min(3rem,120px) 0 min(6rem,240px);
 }
 div.cntWrap>div.content{
     width: 80%;
@@ -115,13 +110,13 @@ div.cntWrap>div.content{
     margin: 0 auto;
 }
 div.cntWrap>div.content>div.header>h2{
-    font-size: 80px;
+    font-size: min(8em,80px);
     font-weight: 700;
-    line-height: 80px;
+    line-height: min(2rem,80px);
     text-transform: uppercase;
 }
 div.cntWrap>div.content>div.section{
-    margin-top: 80px;
+    margin-top: min(2rem,80px);
 }
 div.cntWrap>div.content>div.section>div.artTop::after{
     content: '';
@@ -160,7 +155,7 @@ div.cntWrap>div.content>div.section>div.artBtm>div.article:hover>div.texts{
 }
 div.cntWrap>div.content>div.section>div.artTop>div.article>div.image{
     width: 45%;
-    height: 300px;
+    height: min(7.5rem,300px);
     margin: 0 auto;
     margin-top: 20px;
     background-size: contain;
@@ -171,15 +166,15 @@ div.cntWrap>div.content>div.section>div.artTop>div.article>div.image{
     transition: transform 1s;
 }
 div.cntWrap>div.content>div.section>div.artTop>div.article>div.texts{
-    height: 300px;
-    margin-top: -300px;
+    height: min(7.5rem,300px);
+    margin-top: min(-5.5rem,-220px);
     transform: rotateX(180deg);
     backface-visibility: hidden;
     transition: transform 1s;
 }
 div.cntWrap>div.content>div.section>div.artTop>div.article>div.texts>h3{
-    font-size: 40px;
-    line-height: 300px;
+    font-size: min(1rem,40px);
+    line-height: min(7.5rem,300px);
     font-weight: 700;
     color:#3c415c;
     text-align: center;
@@ -196,7 +191,7 @@ div.cntWrap>div.content>div.section>div.artTop>div.article>div.image.i3{
 div.cntWrap>div.content>div.section>div.artBtm{
     width: calc(100% / 12 * 8);
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: min(1rem,40px);
 }
 div.cntWrap>div.content>div.section>div.artBtm::after{
     content: '';
@@ -216,7 +211,7 @@ div.cntWrap>div.content>div.section>div.artBtm>div.article{
 }
 div.cntWrap>div.content>div.section>div.artBtm>div.article>div.image{
     width: 45%;
-    height: 300px;
+    height: min(7.5rem,300px);
     margin: 0 auto;
     margin-top: 20px;
     background-size: contain;
@@ -233,15 +228,15 @@ div.cntWrap>div.content>div.section>div.artBtm>div.article>div.image.i2{
     background-image: url('../images/service_image/service_img05.png');
 }
 div.cntWrap>div.content>div.section>div.artBtm>div.article>div.texts{
-    height: 300px;
-    margin-top: -300px;
+    height: min(7.5rem,300px);
+    margin-top: min(-5.5rem,-220px);
     transform: rotateX(180deg);
     backface-visibility: hidden;
     transition: transform 1s;
 }
 div.cntWrap>div.content>div.section>div.artBtm>div.article>div.texts>h3{
-    font-size: 40px;
-    line-height: 300px;
+    font-size: min(4em,40px);
+    line-height: min(7.5rem,300px);
     font-weight: 700;
     color:#3c415c;
     text-align: center;
@@ -249,7 +244,7 @@ div.cntWrap>div.content>div.section>div.artBtm>div.article>div.texts>h3{
 
 /* bnr */
 div.bnrWrap{
-    padding: 120px 0px;
+    padding: min(3rem,120px) 0;
     background-color: #3c415c;
 }
 div.bnrWrap>div.banner{
@@ -261,34 +256,35 @@ div.bnrWrap>div.banner{
 div.bnrWrap>div.banner>h2{
     width: calc(100% / 12 * 4);
     background-color: #3c415c;
-    padding: 40px 0px;
+    padding: min(1rem,40px) 0;
     color: #fff;
-    font-size: 80px;
-    line-height: 80px;
+    font-size: min(8em,80px);
+    line-height: min(2rem,80px);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     position: absolute;
-    top: -280px;
+    top: -22%;
     right: 0;
+    border-radius: 20px;
 }
 div.bnrWrap>div.banner>div.searchBar{
     border: 5px solid white;
-    height: 80px;
+    height: min(2rem,80px);
 }
 div.bnrWrap>div.banner>div.searchBar>input{
     background-color: #3c415c;
     border: 5px solid white;
     width: calc(100% / 12 * 11);
     margin-left: 10px;
-    height: 40px;
+    height: min(1rem,40px);
     float: left;
     margin-top: 15px;
     color: #fff;
 }
 div.bnrWrap>div.banner>div.searchBar>i{
     width: calc(100% / 12 * 0.6);
-    font-size: 50px;
+    font-size: min(5em,50px);
     text-align: center;
     padding: 10px;
     color: #fff;
@@ -297,9 +293,9 @@ div.bnrWrap>div.banner>div.searchBar>i{
 }
 div.bnrWrap>div.banner>ul.faqMenu{
     border: 5px solid white;
-    padding: 40px 0px;
+    padding: min(1rem,40px) 0;
     color: #fff;
-    margin-top: 80px;
+    margin-top: min(2rem,80px);
 }
 div.bnrWrap>div.banner>ul.faqMenu>li::after{
     content: '';
@@ -312,7 +308,7 @@ div.bnrWrap>div.banner>ul.faqMenu>li{
     margin-top: 10px;
 }
 div.bnrWrap>div.banner>ul.faqMenu>li:nth-child(odd).on+li{
-    height: 120px;
+    height: min(3rem,120px);
 }
 div.bnrWrap>div.banner>ul.faqMenu>li:nth-child(even){
     height: 0px;
@@ -325,34 +321,34 @@ div.bnrWrap>div.banner>ul.faqMenu>li>h3:hover{
 div.bnrWrap>div.banner>ul.faqMenu>li>h3{
     width: 95%;
     margin: 0 auto;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: min(2em,20px);
+    line-height: min(1rem,40px);
     font-family: 'not';
     float: left;
     cursor: pointer;
 }
 div.bnrWrap>div.banner>ul.faqMenu>li>span{
-    font-size: 24px;
+    font-size: min(2.4em,24px);
     font-weight: 700;
     margin-right: 10px;
-    line-height: 40px;
+    line-height: min(1rem,40px);
     font-family: 'osw';
     float: left;
 }
 div.bnrWrap>div.banner>ul.faqMenu>li>p{
     font-family: 'not';
     width: 80%;
-    font-size: 14px;
+    font-size: min(1.4em,14px);
     line-height: 20px;
-    height: 80px;
+    height: min(2rem,80px);
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: min(1.25rem,50px);
 }
 
 /* ftr */
 div.ftrWrap{
     background-color: #151515;
-    padding: 120px 0px 40px;
+    padding: min(3rem,120px) 0 min(1rem,40px);
     color: #fff;
 }
 div.ftrWrap>div.footer{
@@ -377,14 +373,14 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav::after{
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrTop>ul.nav>li{
     float: left;
     margin-right: 100px;
-    font-size: 20px;
+    font-size: min(2em,20px);
     font-weight: 700;
-    line-height: 40px;
+    line-height: min(1rem,40px);
     text-transform: uppercase;
     cursor: pointer;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid{
-    margin-top: 80px;
+    margin-top: min(2rem,80px);
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info::after{
     content: '';
@@ -394,19 +390,19 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info::after{
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info>li{
     float: left;
     margin-right: 50px;
-    font-size: 15px;
+    font-size: min(1.5em,15px);
     font-weight: 700;
-    line-height: 40px;
+    line-height: min(1rem,40px);
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrMid>ul.info>li:nth-child(1){
     color: #666;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm{
-    margin-top: 40px;
+    margin-top: min(1rem,40px);
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
-    font-size: 12px;
-    line-height: 40px;
+    font-size: min(1.2em,12px);
+    line-height: min(1rem,40px);
     font-weight: 700;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav::after{
@@ -416,8 +412,8 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav::after{
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.nav>li{
     float: left;
-    font-size: 12px;
-    line-height: 40px;
+    font-size: min(1.2em,12px);
+    line-height: min(1rem,40px);
     font-weight: 700;
     margin-right: 55px;
 }
@@ -433,10 +429,10 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li:hover>span{
     opacity: 1;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li{
-    margin-top: 40px;
+    margin-top: min(1rem,40px);
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>span{
-    font-size: 14px;
+    font-size: min(1.4em,14px);
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 20px;
@@ -444,17 +440,17 @@ div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>span{
     transition: opacity 0.5s;
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li>i{
-    font-size: 30px;
+    font-size: min(3em,30px);
 }
 div.ftrWrap>div.footer>div.footerTop>div.ftrRight>ul.sns>li:nth-child(1){
     margin-top: 0;
 }
 div.ftrWrap>div.footer>div.logo{
-    font-size: 40px;
-    line-height: 80px;
+    font-size: min(4em,40px);
+    line-height: min(2rem,80px);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: min(1rem,40px);
     cursor: pointer;
 }

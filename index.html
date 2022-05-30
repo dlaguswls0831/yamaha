@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMAHA</title>
+    <link href="./images/main_image/yahama_logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/xeicon.min.css">
+    <link rel="stylesheet" href="./css/yamaha_pc_main.css">
+    <link rel="stylesheet" href="./css/yamaha_tab_main.css" media="(max-width:1024px) and (min-width:0px)">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.mobile.custom.min.js"></script>
+    <script>
+        $(function(){
+            var i=0;
+            var wd = $(window).width();
+            if(wd > 1024){
+                $('.cnt02 .btns span').eq(1).click(function(){
+                    i++;
+                    if(i>=6){
+                        i=6;
+                    }
+                    $('.artView>.artGroup').css('margin-left',i*-33.3+'%');
+                });
+                $('.cnt02 .btns span').eq(0).click(function(){
+                    i--;
+                    if(i<=0){
+                        i=0;
+                    }
+                    $('.artView>.artGroup').css('margin-left',i*-33.3+'%');
+                });
+            }else if(wd > 420 && wd <= 1024){
+                $('.hdrWrap .logos>i').click(function(){
+                    $('.hdrWrap .logos>.nav').toggleClass('navon');
+                });
+    
+                $('.artView>.artGroup').swipeleft(function(){
+                    i++;
+                    if(i>=2){
+                        i=2;
+                    }
+                    $('.artView>.artGroup').css('margin-left',i*-100+'%');
+                });
+                $('.artView>.artGroup').swiperight(function(){
+                    i--;
+                    if(i<=0){
+                        i=0;
+                    }
+                    $('.artView>.artGroup').css('margin-left',i*-100+'%');
+                });
+            }else{}
+        });
+    </script>
+</head>
+<body>
+    <!-- hdr -->
+    <div class="hdrWrap">
+        <div class="header">
+            <div class="logos">
+                <i class="xi-bars"></i>
+                <div class="logo"><a href="./index.html">yamaha</a></div>
+                <ul class="nav">
+                    <li><a href="./yamaha_pc_sub01.html">product</a></li>
+                    <li><a href="./yamaha_pc_sub02.html">artist</a></li>
+                    <li><a href="./yamaha_pc_sub03.html">service</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="xi-search"></i>
+                <i class="xi-user-plus"></i>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="mainWrap">
+        <video src="./images/main_image/guitarist_-_46 (Original).mp4" autoplay muted loop></video>
+        <div class="main">
+            <h2>make an impact<br>make waves</h2>
+            <div class="btn">learn more</div>
+        </div>
+    </div>
+    <!-- cnt01 -->
+    <div class="cntWrap">
+        <div class="content cnt01">
+            <div class="header">
+                <h2>new</h2>
+            </div>
+            <div class="section">
+                <div class="article">
+                    <div class="texts">
+                        <h3>ybs-82z</h3>
+                        <p>이 제품의 출시는 오늘날 색소폰 분야에서 가장 획기적인 사건 중 하나일 것입니다. 마침내, 과거 클래식 색스폰의 사운드와 느낌을 그대로 살리면서도 이에 최첨단 음조와 메커니즘을 더한 새로운 현대 색스폰이 탄생했습니다. 클래식 '62' 모델의 스케일을 바탕으로 만들어진 새 Custom Z 색스폰의 바디는 특수 청동 합금으로 만들어져 가볍고, "연주"하는 느낌을 살려줄 뿐만 아니라 누구나 꿈꿔온 유연한 톤을 선사합니다. Z를 통해 다양한 음악을 연주할 수 있으며 원하는 어떤 사운드라도 재현할 수 있습니다.</p>
+                    </div>
+                    <div class="images">
+                        <div class="image i1"></div>
+                        <div class="imgbgs">
+                            <div class="imgbg02"></div>
+                            <div class="imgbg01"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="images">
+                        <div class="image i2"></div>
+                        <div class="imgbgs">
+                            <div class="imgbg01"></div>
+                            <div class="imgbg02"></div>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h3>ysl-897z</h3>
+                        <p>세계적으로 유명한 트럼보니스트인 앤디 틴(Andy Martin)이 디자인한 YSL-897Z 커스텀 Z 트럼본은 다양한 연주 상황에 완벽하게 어울리는 악기이며, 교체 가능한 두 개의 리드 파이프(Z1, Z2)가 제공됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cnt02 -->
+    <div class="cntWrap">
+        <div class="content cnt02">
+            <div class="header">
+                <h2>concert</h2>
+            </div>
+            <div class="section">
+                <div class="artView">
+                    <div class="artGroup">
+                        <div class="article">
+                            <div class="image i1"></div>
+                            <div class="texts">
+                                <h3>선율</h3>
+                                <h5>PIANIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i2"></div>
+                            <div class="texts">
+                                <h3>조은솔</h3>
+                                <h5>PIANIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i3"></div>
+                            <div class="texts">
+                                <h3>김재이</h3>
+                                <h5>HORNIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i4"></div>
+                            <div class="texts">
+                                <h3>양하인</h3>
+                                <h5>PIANIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i5"></div>
+                            <div class="texts">
+                                <h3>김한솔</h3>
+                                <h5>PIANIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i6"></div>
+                            <div class="texts">
+                                <h3>박은진</h3>
+                                <h5>PIANIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i7"></div>
+                            <div class="texts">
+                                <h3>나은영</h3>
+                                <h5>HORNIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i8"></div>
+                            <div class="texts">
+                                <h3>이소린</h3>
+                                <h5>HORNIST</h5>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="image i9"></div>
+                            <div class="texts">
+                                <h3>안소영</h3>
+                                <h5>PIANIST</h5>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="btns">
+                    <div class="btn">
+                        <span>↼</span>
+                    </div>
+                    <div class="btn">
+                        <span>⇀</span>
+                    </div>
+                </div>
+                <div class="pag">
+                    <ul class="paging">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cnt03 -->
+    <div class="cntWrap">
+        <div class="content cnt03">
+            <div class="header">
+                <h2>artist</h2>
+            </div>
+            <div class="section">
+                <div class="article">
+                    <div class="image i1"></div>
+                    <div class="texts">
+                        <div class="image i1"></div>
+                        <h5>guitarist</h5>
+                        <h3>양재인</h3>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="image i2"></div>
+                    <div class="texts">
+                        <div class="image i2"></div>
+                        <h5>drummer</h5>
+                        <h3>김승호</h3>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="image i3"></div>
+                    <div class="texts">
+                        <div class="image i3"></div>
+                        <h5>musician</h5>
+                        <h3>이삼열</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bnr -->
+    <div class="bnrWrap">
+        <div class="banner">
+            <div class="header">
+                <h2>event</h2>
+            </div>
+            <div class="texts">
+                <div class="bar bar01">
+                    <div class="ovrgird ovr01"></div>
+                </div>
+                <p>수험생 응원이벤트 ‘수고했어, 열아홉! 스무살은 음악과함께!’<br>DZR/DXS XLF 시리즈 펌웨어 V1.3.0/V1.3.1이 출시되었습니다<br>학교와 교회로 직접 찾아가는 ‘야마하 스쿨 콘서트’<br>2022년 상반기 야마하 신디사이저 초보탈출 강의<br>야마하 라이징 아티스트 시리즈</p>
+                <div class="bar bar02">
+                    <div class="ovrgird ovr02"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ftr -->
+    <div class="ftrWrap">
+        <div class="footer">
+            <div class="footerTop">
+                <div class="ftrLeft">
+                    <div class="ftrTop">
+                        <ul class="nav">
+                            <li>product</li>
+                            <li>artist</li>
+                            <li>service</li>
+                        </ul>
+                    </div>
+                    <div class="ftrMid">
+                        <ul class="info">
+                            <li>글로벌</li>
+                            <li>대한민국</li>
+                        </ul>
+                    </div>
+                    <div class="ftrBtm">
+                        <ul class="info">
+                            <li>야마하뮤직코리아(주)의 이미지 무단 도용 적발시 법적 처벌을 받을 수 있습니다. © YAMAHACORPORATION</li>
+                        </ul>
+                        <ul class="nav">
+                            <li>문의처</li>
+                            <li>이용약관</li>
+                            <li>개인정보 취급방침</li>
+                            <li>쿠키 및 유사기술 사용안내</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftrRight">
+                    <ul class="sns">
+                        <li><span>youtube</span><i class="xi-youtube-play"></i></li>
+                        <li><span>instagram</span><i class="xi-instagram"></i></li>
+                        <li><span>facebook</span><i class="xi-facebook-official"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">yamaha</div>
+        </div>
+    </div>
+</body>
+</html>
