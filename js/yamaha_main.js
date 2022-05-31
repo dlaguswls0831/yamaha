@@ -23,6 +23,8 @@ $(function(){
                 i=2;
             }
             $('.artView>.artGroup').css('margin-left',i*-100+'%');
+            $('.paging>li').removeClass('on');
+            $('.paging>li').eq(i).addClass('on');
         });
         $('.artView>.artGroup').swiperight(function(){
             i--;
@@ -30,6 +32,27 @@ $(function(){
                 i=0;
             }
             $('.artView>.artGroup').css('margin-left',i*-100+'%');
+            $('.paging>li').removeClass('on');
+            $('.paging>li').eq(i).addClass('on');
         });
-    }else{}
+    }else{
+        $('.artView>.artGroup').swipeleft(function(){
+            i++;
+            if(i>=2){
+                i=2;
+            }
+            $('.artView>.artGroup').css('margin-left',i*-100+'%');
+            $('.paging>li').removeClass('on');
+            $('.paging>li').eq(i).addClass('on');
+        });
+        $('.artView>.artGroup').swiperight(function(){
+            i--;
+            if(i<=0){
+                i=0;
+            }
+            $('.artView>.artGroup').css('margin-left',i*-100+'%');
+            $('.paging>li').removeClass('on');
+            $('.paging>li').eq(i).addClass('on');
+        });
+    }
 });

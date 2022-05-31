@@ -1,14 +1,20 @@
+/* hdr */
 div.hdrWrap>div.header>div.icon{
     width: calc(100% / 4 * 1);
 }
+
+/* main */
 div.mainWrap>video{
     margin-top: 0;
 }
 
+/* cnt 공통 */
 div.cntWrap>div.content>div.header>h2{
     font-size: min(5em,50px);
     margin-left: min(1rem,40px);
 }
+
+/* cnt01 */
 div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>p{
     display: none;
 }
@@ -28,4 +34,39 @@ div.cntWrap>div.content.cnt01>div.section>div.article>div.texts{
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>h3{
     font-size: min(2.4em,24px);
+}
+/* cnt02 */
+div.cntWrap>div.content.cnt02>div.section>div.artView>div.artGroup>div.article:nth-child(6)~div.article{
+    display: none;
+}
+div.cntWrap>div.content.cnt02>div.section>div.artView>div.artGroup>div.article{
+    width: calc(100% / 6 - 20px);
+}
+div.cntWrap>div.content.cnt02>div.section>div.pag>ul.paging{
+    width: 65%;
+}
+
+/* cnt03 */
+div.cntWrap>div.content.cnt03>div.section{
+    width: 70%;
+    margin: 0 auto;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article{
+    width: 45%;
+    float: none;
+    margin-top: 10px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article:nth-child(2){
+    margin-left: auto;
+}
+
+/* bnr */
+div.bnrWrap{
+   padding-bottom: min(1rem,40px);
+}
+
+
+/* ftr */
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
+    display: none;
 }
