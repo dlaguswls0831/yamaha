@@ -1,0 +1,25 @@
+div.hdrWrap>div.header>div.icon{
+    width: calc(100% / 4 * 1);
+}
+
+
+div.cntWrap>div.content.cnt01>div.section>div.ovrGrid>div div.image{
+    background-size: contain;
+}
+div.cntWrap>div.content.cnt01>div.section>div.ovrGrid{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+div.cntWrap>div.content.cnt02>div.section>div.ovrGrid>div div.article>div.image{
+    background-size: contain;
+}
+div.cntWrap>div.content.cnt02>div.section>div.ovrGrid{
+    min-width: auto;
+}
+
+/* ftr */
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
+    display: none;
+}

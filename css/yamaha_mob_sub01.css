@@ -1,0 +1,13 @@
+div.hdrWrap>div.header>div.icon{
+    width: calc(100% / 4 * 1);
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{
+    font-size: min(1.2em,12px);
+    height: min(2rem,80px);
+}
+
+/* ftr */
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
+    display: none;
+}

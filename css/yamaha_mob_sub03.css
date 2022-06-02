@@ -1,0 +1,29 @@
+/* hdr */
+div.hdrWrap>div.header>div.icon{
+    width: calc(100% / 4 * 1);
+}
+
+div.cntWrap>div.content>div.section>div.artTop>div.article{
+    height: min(4rem,160px);
+}
+div.cntWrap>div.content>div.section>div.artTop>div.article>div.image{
+    height: min(5rem,200px);
+    background-position: top;
+}
+div.cntWrap>div.content>div.section>div.artTop>div.article>div.texts{
+    height: min(5rem,200px);
+    margin-top: min(-4.25rem,-170px);
+}
+div.cntWrap>div.content>div.section>div.artBtm{
+    display: none;
+}
+
+div.bnrWrap>div.banner>ul.faqMenu>li>span{
+    margin-right: 5px;
+}
+
+
+/* ftr */
+div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
+    display: none;
+}
