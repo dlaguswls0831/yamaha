@@ -16,25 +16,6 @@ $(function(){
             }
             $('.artView>.artGroup').css('margin-left',i*-33.3+'%');
         });
-    }else if(wd > 420 && wd <= 1024){
-        $('.artView>.artGroup').swipeleft(function(){
-            i++;
-            if(i>=2){
-                i=2;
-            }
-            $('.artView>.artGroup').css('margin-left',i*-100+'%');
-            $('.paging>li').removeClass('on');
-            $('.paging>li').eq(i).addClass('on');
-        });
-        $('.artView>.artGroup').swiperight(function(){
-            i--;
-            if(i<=0){
-                i=0;
-            }
-            $('.artView>.artGroup').css('margin-left',i*-100+'%');
-            $('.paging>li').removeClass('on');
-            $('.paging>li').eq(i).addClass('on');
-        });
     }else{
         $('.artView>.artGroup').swipeleft(function(){
             i++;
