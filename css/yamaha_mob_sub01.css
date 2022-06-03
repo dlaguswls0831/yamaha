@@ -7,6 +7,13 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{
     height: min(2rem,80px);
 }
 
+div.cntWrap>div.content.cnt03>div.section>div.artLeft{
+    width: calc(100% / 4 * 3);
+}
+div.cntWrap>div.content.cnt03>div.section>div.artRight{
+    width: calc(100% / 4 * 3);
+}
+
 /* ftr */
 div.ftrWrap>div.footer>div.footerTop>div.ftrLeft>div.ftrBtm>ul.info>li{
     display: none;
